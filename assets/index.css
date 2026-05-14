@@ -1,37 +1,191 @@
 *{
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
-    padding: 1%;
+
     margin: 0;
 
 }
 
 
-
-
 body {
-    background-color: #eeeee6;
+    color: #eeeee6;
+    background-color: #101117;
+   
+	font-family: Sulphur Point,sans-serif;
 }
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-}
+
 p{
-    font-size: 1rem;
-
+    padding: 1%;
+    font-size: 1.2rem;
 }
 
-.image_projet_pro {
-    display: flex;
-    flex-direction: column; /* Aligne les éléments verticalement */
-
-    color: inherit;         /* Garde la couleur de texte par défaut */
-    width: fit-content;     /* Adapte la largeur du lien à celle de l'image */
-    margin: 0 auto;         /* Centre le bloc entier sur la page */
+h2 {
+  margin-left: 8%;
+  font-size: xx-large;
+  text-decoration: underline;
 }
 
-.image_projet_pro p {
-    margin-top: 10px;       /* Ajoute un petit espace entre l'image et le texte */
-    text-align: center;
+h3, h4 {
+  text-align: center;
+  padding: 20px;
 }
+
+#menu {
+  position: fixed;
+  background-color: #101117;
+  z-index: 12;
+  width: 100%;
+  text-align: center;
+  top: 0px;
+  margin: 0;
+  padding-top: 10px;
+  transition: top .6s;
+  height: 5vh;
+}
+
+#menu ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px;
+}
+
+#menu li {
+  display: inline;
+  list-style: none;
+}
+
+#menu a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+#accroche {
+  position: absolute;
+  top: 5vh;
+  width: 100%;
+  margin-left: 10vw;
+  text-align: left;
+  z-index: 100;
+  display: block;
+  color: #fff;
+  font-size: 5rem;
+}
+
+#nom {
+margin-top: 3%;
+  width: 100%;
+  z-index: 100;
+  display: block;
+  font-size: 5rem;
+}
+
+
+#titre {
+  width: 100%;
+
+  z-index: 100;
+  display: block;
+  font-size: 1.5rem;
+}
+
+
+
+
+#a_propos{
+    color: #101117;
+    position: relative;
+  padding: 50px 0;
+  background: white;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 100px;
+  
+	
+}
+
+#a_propos h2 {
+    margin-bottom: 40px;
+}
+
+#a_propos::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}
+
+
+#propos_cont img {
+  width: 20vw;
+  padding-right: 5%;
+  padding-left: 2px;
+  transform: perspective(600px) rotateY(-8deg);
+  filter: drop-shadow(30px 10px 4px #2d2d334a);
+}
+
+#propos_cont {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#comp {
+  background-color: #101117;
+  color: #f5f5f5;
+  position: relative;
+  padding: 200px 0;
+  z-index: 4;
+}
+
+#comp_div {
+  display: flex;
+  flex-direction: column;
+}
+
+#comp_img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70vw;
+  align-self: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #13151b;
+  box-shadow: #2222d240 2px 2px 10px 9px;
+}
+
+#comp a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+#comp figure {
+  transition: transform .2s;
+  margin: 30px;
+}
+
+#comp figcaption {
+  text-align: center;
+}
+
+#comp figure:hover {
+  transform: scale(1.1);
+}
+
+#desc {
+  padding-left: 4%;
+  padding-right: 3%;
+  align-self: center;
+}
+
+
+
