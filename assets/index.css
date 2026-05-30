@@ -116,7 +116,7 @@ margin-top: 3%;
 }
 
 #a_propos h2 {
-    margin-bottom: 40px;
+    margin-bottom: 40 px;
 }
 
 #a_propos::after {
@@ -208,6 +208,62 @@ margin-top: 3%;
   padding-left: 4%;
   padding-right: 3%;
   align-self: center;
+}
+
+
+#projet {
+  position: relative;
+  padding: 50px 0;
+  background: white;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.projet_box {
+  margin-right: 10vw;
+  margin-left: 5vw;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gauche1, .droite2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 40vw;
+  z-index: 2;
+}
+
+video {
+  border-radius: 20px;
+  box-shadow: #2222d240 2px 2px 10px 9px;
+}
+
+.droite1 {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 51vw;
+  justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 5px;
+  box-shadow: #0000003d 0 3px 8px;
+  border-radius: 12px;
+  left: -15px;
+}
+
+.projet_box_1 {
+  margin-right: 10vw;
+  margin-left: 5vw;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 
