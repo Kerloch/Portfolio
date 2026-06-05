@@ -376,3 +376,184 @@ width: 100%;
   margin-bottom: 5px;    
 }
 
+
+/* ===== MEDIA QUERIES - RESPONSIVE DESIGN ===== */
+
+/* Tablettes et petits écrans (768px et moins) */
+@media (max-width: 768px) {
+  
+  /* Menu */
+  #menu ul {
+    padding: 5px;
+  }
+  
+  #menu a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  
+  #menu > ul {
+    height: auto;
+  }
+  
+  /* Titre principal */
+  #nom {
+    font-size: 2.5rem;
+  }
+  
+  #titre {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-left: 5%;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  /* À propos */
+  #propos_cont {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #propos_cont img {
+    width: 100%;
+    max-width: 350px;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+  
+  #desc {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  /* Compétences */
+  #comp_img {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #comp figure {
+    margin: 20px;
+  }
+  
+  /* Projets */
+  .projet_box {
+    flex-direction: column;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    align-items: center;
+  }
+  
+  .gauche1, .droite1, .gauche2, .droite2 {
+    width: 100%;
+  }
+  
+  .droite1, .gauche2 {
+    left: 0;
+  }
+  
+  video {
+    margin-top: 20px;
+  }
+}
+
+/* Téléphones (480px et moins) */
+@media (max-width: 480px) {
+  
+  /* Menu */
+  #menu a {
+    margin: 0 5px;
+    font-size: 0.75rem;
+  }
+  
+  #menu > ul {
+    padding-top: 5px;
+  }
+  
+  /* Titre principal */
+  #nom {
+    font-size: 1.8rem;
+    margin-top: 2%;
+  }
+  
+  #titre {
+    font-size: 0.9rem;
+  }
+  
+  #accroche {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-left: 8%;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    padding: 2%;
+  }
+  
+  /* À propos */
+  #desc {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  #propos_cont img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Compétences */
+  #comp_img {
+    width: 95%;
+  }
+  
+  #comp figure {
+    margin: 10px;
+  }
+  
+  #comp figure img {
+    height: 70px !important;
+  }
+  
+  /* Projets */
+  .projet_box {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+  
+  .gauche2, .droite1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* CV */
+  #CV {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  #CV_lien a {
+    padding: 20px;
+    width: 60px;
+  }
+  
+  #CV_lien a img {
+    width: 60px;
+    height: 60px;
+  }
+}
