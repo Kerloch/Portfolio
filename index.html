@@ -3,298 +3,279 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Noé Kerloch, étudiant en première année de BUT Informatique à Nantes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="assets/index.css" rel="stylesheet">
-    <title> Portfolio | Noé Kerloch</title>
+    <title>Portfolio | Noé Kerloch</title>
 </head>
 <body>
-    <div id="menu" style="top: 0px;">
-                <!-- lien du menu-->
-                <ul>
-                    <li><a href="#a_propos">À propos</a></li>
-                    <li><a href="#comp">Compétences</a></li>
-                    <li><a href="#projet">Projets</a></li>
-                    <li><a href="#CV">Mon CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <section id="Moi">
-                    <div id="nom">Noé Kerloch </div>
-                    <div id="titre">Etudiant en première année de BUT informatique</div>
-                    </div>
-                </section>
-                
-            
-    <div id="accroche">            
-                
-            </div>
 
-   
+    <header id="menu">
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-burger" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </label>
+            <ul>
+                <li><a href="#a_propos">À propos</a></li>
+                <li><a href="#comp">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#CV">Mon CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div id="Moi">
+            <p class="hero-tag">Portfolio développeur</p>
+            <h1 id="nom">Noé Kerloch</h1>
+            <div id="titre">Étudiant en première année de BUT informatique</div>
+            <div class="hero-links">
+                <a href="#projet" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-ghost">Me contacter</a>
+            </div>
+        </div>
+
+        <div id="accroche">
+            <div class="terminal-card" aria-hidden="true">
+                <div class="terminal-bar">
+                    <span></span><span></span><span></span>
+                </div>
+                <pre class="terminal-body"><code><span class="tok-kw">const</span> <span class="tok-var">etudiant</span> = {
+  nom: <span class="tok-str">"Noé Kerloch"</span>,
+  age: <span class="tok-num">18</span>,
+  ville: <span class="tok-str">"Nantes"</span>,
+  formation: <span class="tok-str">"BUT Informatique"</span>,
+  objectif: <span class="tok-str">"école d'ingénieur"</span>,
+  passions: [<span class="tok-str">"dev"</span>, <span class="tok-str">"jeux vidéo"</span>, <span class="tok-str">"IA"</span>]
+};</code></pre>
+            </div>
+        </div>
+    </section>
+
     <section id="a_propos">
-        <h2>À propos.</h2>
+        <h2>À propos</h2>
         <div id="propos_cont">
-                            <p id="desc">Bonjour et bienvenue sur mon portfolio.
-                                <br>
-                                Je m'appelle Noé Kerloch, j'ai 18 ans et je suis originaire de Saint Gildas des Bois en Loire-Atlantique.
-                                <br><br>
-                                Je suis passionné par l’informatique et les jeux-vidéos depuis de nombreuses années, je me suis donc naturellement dirigé 
-                                vers un bac Technologique avec la spécialité SIN (systèmes d'information et numérique) au lycée. 
-                                <br>
-                                Après avoir obtenu le bac avec mention bien en 2025, j’ai intégré le BUT informatique de Nantes dans l'objectif d'intégrer par la suite une école d'ingénieur.
-                                <br><br>
-                                Durant cette premiere année de BUT informatique, j'ai approfondis mes connaissances 
-                                en développement et découvert de nouvelles technologies. J'ai ainsi participé à plusieurs projets d'équipe qui m'ont permis de 
-                                mettre en pratique mes compétences et de les enrichir.
-                                <br>
-                                Plus tard, j'envisage de me spécialiser en développement d'IA (intelligence artificielle)
-                                <br><br> 
-                                Si vous souhaitez en savoir plus sur moi, mes compétences et mes différents projets, ou tout simplement savoir comment me 
-                                contacter, n'hésitez pas à explorer ce site et à me faire des retours.
-                                <br><br>
-                                Bonne lecture.
-                            </p>
-                            <!-- Image de presentation-->
-                            <img src="assets/images/Photo.jpg">
-                        </div>
-
-    </section>
-     <section id="comp">
-        
-            <!-- titre de la section-->
-            <h2>Mes compétences.</h2>
-            <div id="comp_div">
-                <!--- tableau de compétences 1 -->
-                <h3>Front-end</h3>
-                <div id="comp_img">
-                    <!--- image de la compétences 1 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language">
-                            <img src="assets/images/html.png" height="100px">
-                            <figcaption>HTML</figcaption>
-                        </a>
-                    </figure>
-                    <!--- image de la compétences 2 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade">
-                            <img src="assets/images/css.png" height="100px">
-                            <figcaption>CSS</figcaption>
-                        </a>
-                    </figure>
-
-                </div>
-
-
-                <h3>Back-end</h3>
-                <div id="comp_img">
-                    <!--- image de la compétences 1 -->
-                    
-                    <!--- image de la compétences 2 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language">
-                            <img src="assets/images/SQL.png" height="100px">
-                            <figcaption>SQL</figcaption>
-                        </a>
-                    </figure>
-                    <!--- image de la compétences 3 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Python_(langage)">
-                            <img src="assets/images/python.png" height="100px">
-                            <figcaption>Python </figcaption>
-                        </a>
-                    </figure>
-
-                    <!--- image de la compétences 1 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Go_(langage)">
-                            <img src="assets/images/Go.png" height="100px">
-                            <figcaption>Golang</figcaption>
-                        </a>
-                    </figure>
-                    <!--- image de la compétences 2 -->
-                    <figure>
-                        <a href="https://fr.wikipedia.org/wiki/Kotlin_(langage)">
-                            <img src="assets/images/Kotlin.png" height="100px">
-                            <figcaption>Kotlin</figcaption>
-                        </a>
-                    </figure>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section id="projet">
-    <br>
-    <h2>Mes projets academiques.</h2>
-    
-    <div class="projet_box">
-        <div class="gauche1">
-            <a href="https://gitlab.univ-nantes.fr/E258619H/projet_particules" target="_blank">
-            <video autoplay loop muted>
-                <source src="assets/videos/particules.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas les vidéos.
-            </video>
-        </a>
+            <p id="desc">
+                Bonjour et bienvenue sur mon portfolio.
+                <br><br>
+                Je m'appelle Noé Kerloch, j'ai 18 ans et je suis originaire de Saint-Gildas-des-Bois, en Loire-Atlantique.
+                <br><br>
+                Je suis passionné par l'informatique et les jeux vidéo depuis de nombreuses années. Je me suis donc naturellement dirigé
+                vers un bac technologique avec la spécialité SIN (Systèmes d'Information et Numérique).
+                Après avoir obtenu le bac avec mention bien en 2025, j'ai intégré le BUT Informatique de Nantes, dans l'objectif d'intégrer
+                par la suite une école d'ingénieur.
+                <br><br>
+                Durant cette première année de BUT informatique, j'ai approfondi mes connaissances en développement et découvert de
+                nouvelles technologies. J'ai ainsi participé à plusieurs projets d'équipe qui m'ont permis de mettre en pratique mes
+                compétences et de les enrichir. Plus tard, j'envisage de me spécialiser en développement d'IA.
+                <br><br>
+                Si vous souhaitez en savoir plus sur moi, mes compétences et mes différents projets, ou tout simplement savoir comment
+                me contacter, n'hésitez pas à explorer ce site et à me faire des retours.
+                <br><br>
+                Bonne lecture.
+            </p>
+            <img src="assets/images/Photo.jpg" alt="Photo de Noé Kerloch">
         </div>
-        
-        <div class="droite1">
-            <h3>Projet Particules • 2026</h3>
-            <p>Le projet "Particules" est une simulation visuelle interactive développée en langage Go. Le moteur simule la gravité, gère les limites de l'écran et calcule les collisions entre les éléments. Les particules possèdent des propriétés dynamiques, comme des variations de couleurs ou des trajectoires circulaires.
-
-            L'interface est contrôlable en temps réel. L'utilisateur peut utiliser le clavier pour modifier le comportement du système. Il peut ajuster l'intensité de la gravité, changer le taux d'apparition ou lier la source des particules à la souris.</p>
-            
-        </div>
-    </div>
-    <br><br>
-
-    <div class="projet_box">
-        <div class="gauche2">
-            <h3>Site vitrine • 2026</h3>
-            <p>Le projet Folex est une maquette de site e-commerce dédiée aux montres de luxe. Notre but était de coder un site vitrine pour imaginer le parcours utilisateur. On a développé toute l'interface visuelle : de la connexion fictive à l'affichage du catalogue et du panier. L'enjeu technique était de concevoir un design fluide, soigné et responsive, afin de simuler une expérience d'achat réaliste.</p>
-            
-        </div>
-        <div class="droite2">
-            <a href="https://gitlab.univ-nantes.fr/E258619H/sitre_vitrine" target="_blank">
-            <video autoplay loop muted>
-                <source src="assets/videos/site.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas les vidéos.
-            </video>
-            </a>
-        </div>
-        
-        
-    </div>
-
-</section>
-
-
-
-
-<section id="projet">
-
-    <h2>Mes projets personnels.</h2>
-    
-    <div class="projet_box">
-        <div class="gauche1">
-            <a href="https://gitlab.univ-nantes.fr/E258619H/jeu_gravite_simpliste"target="_blank">
-            <video autoplay loop muted>
-                
-                <source src="assets/videos/jeu.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas les vidéos.
-            </video>
-            </a>
-        </div>
-        
-        <div class="droite1">
-            <h3>Jeu avec gravitée • 2023</h3>
-            <p>Avant d'integrer une formation dans l'informatique, je m'interessait déjà à la programmation, j’ai créé un jeu en 2D en réalisant une
-            gravité simpliste et un personnage qui pouvait sauter et se déplacer de gauche à droite.
-            Cette expérience m’a aidé à progresser dans la gestion des variables, des collisions et des
-            classes. J’ai également appris à raisonner de manière plus efficace en programmation et à
-            savoir m’adapter à différents langages. Cette première expérimentation m’a permis d’être
-            plus à l’aise lors des cours de programmation par la suite.</p>
-                        
-        </div>
-    </div>
-    <br><br>
     </section>
 
+    <section id="comp">
+        <h2>Mes compétences</h2>
+        <div id="comp_div">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section id="CV">
-    
-    <br><br><br>
-    <!---titre de la section-->
-    <h2>Mon CV.</h2>
-    <img src="assets/images/CV.png">
-    <!---Division avec les différents moyens de contacter-->
-    <div id="CV_img">
-        <!--Premier moyen de contact-->
-        <div id="CV_lien">
-            <a href="assets/images/CVButInformatique.pdf" download="CV_Noé_Kerloch.pdf">
+            <h3>Front-end</h3>
+            <div id="comp_img">
                 <figure>
-                    <img src="assets/images/cv.png">
-                    
-                    
+                    <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank" rel="noopener">
+                        <img src="assets/images/html.png" height="100px" alt="Logo HTML">
+                        <figcaption>HTML</figcaption>
+                    </a>
                 </figure>
-                
-            </a>
-        </div>
-        <a href="assets/images/CVButInformatique.pdf" download="CV_Noé_Kerloch.pdf"> Telecharger</a>
-    </div>
-    <br>
-    
-</section>
-
-<section id="contact">
-    <h2>Me contacter.</h2>
-    <div id="contact_container">
-        <div id="contact_grid">
-            <div id="contact_direct">
-                <h3>Contact Direct</h3>
-                <div id="contact_items">
-                    <a href="mailto:noekerloch@gmail.com" class="contact_item">
-                        <svg class="contact_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                        </svg>
-                        <div class="contact_text">
-                            <div class="contact_label">Email</div>
-                            <div class="contact_value">noekerloch@gmail.com</div>
-                        </div>
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank" rel="noopener">
+                        <img src="assets/images/css.png" height="100px" alt="Logo CSS">
+                        <figcaption>CSS</figcaption>
                     </a>
-                    
-                    <a href="tel:+33766562424" class="contact_item">
-                        <svg class="contact_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                        </svg>
-                        <div class="contact_text">
-                            <div class="contact_label">Téléphone</div>
-                            <div class="contact_value">07 66 56 24 24</div>
-                        </div>
-                    </a>
-                </div>
+                </figure>
             </div>
 
-            <div id="contact_socials">
-                <h3>Réseaux Sociaux</h3>
-                <div id="social_links">
-                    <a href="https://www.linkedin.com/in/no%C3%A9-kerloch-2b47ba2a8" target="_blank" class="social_link linkedin" title="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                        <span>LinkedIn</span>
+            <h3>Back-end</h3>
+            <div id="comp_img">
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank" rel="noopener">
+                        <img src="assets/images/SQL.png" height="100px" alt="Logo SQL">
+                        <figcaption>SQL</figcaption>
                     </a>
-                    
-                    <a href="https://gitlab.univ-nantes.fr/E258619H" target="_blank" class="social_link gitlab" title="GitLab">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.6 9.7L13.1.2c-.4-.3-.9-.3-1.3 0L1.2 9.7c-.4.3-.6.7-.5 1.2l1.8 5.5c.1.4.4.7.8.9l9 5.2c.4.2.9.2 1.3 0l9-5.2c.4-.2.7-.5.8-.9l1.8-5.5c.1-.5-.1-.9-.5-1.2zm-4.2 6.7h-3.2l-1-3h-3.2l-1 3H4.6L12 3.2l7.4 13.2z"/>
-                        </svg>
-                        <span>GitLab</span>
+                </figure>
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Python_(langage)" target="_blank" rel="noopener">
+                        <img src="assets/images/python.png" height="100px" alt="Logo Python">
+                        <figcaption>Python</figcaption>
                     </a>
+                </figure>
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Go_(langage)" target="_blank" rel="noopener">
+                        <img src="assets/images/Go.png" height="100px" alt="Logo Golang">
+                        <figcaption>Golang</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://fr.wikipedia.org/wiki/Kotlin_(langage)" target="_blank" rel="noopener">
+                        <img src="assets/images/Kotlin.png" height="100px" alt="Logo Kotlin">
+                        <figcaption>Kotlin</figcaption>
+                    </a>
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projet">
+        <h2>Mes projets académiques</h2>
+
+        <div class="projet_box">
+            <div class="gauche1">
+                <a href="https://gitlab.univ-nantes.fr/E258619H/projet_particules" target="_blank" rel="noopener">
+                    <video autoplay loop muted playsinline aria-label="Démonstration du projet Particules">
+                        <source src="assets/videos/particules.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </a>
+            </div>
+            <div class="droite1">
+                <h3>Projet Particules <span class="year">2026</span></h3>
+                <p>Le projet « Particules » est une simulation visuelle interactive développée en Go. Le moteur simule la gravité,
+                gère les limites de l'écran et calcule les collisions entre les éléments. Les particules possèdent des propriétés
+                dynamiques, comme des variations de couleurs ou des trajectoires circulaires.
+                <br><br>
+                L'interface est contrôlable en temps réel : l'utilisateur peut ajuster l'intensité de la gravité, changer le taux
+                d'apparition ou lier la source des particules à la souris.</p>
+            </div>
+        </div>
+
+        <div class="projet_box">
+            <div class="gauche2">
+                <h3>Site vitrine <span class="year">2026</span></h3>
+                <p>Le projet Folex est une maquette de site e-commerce dédiée aux montres de luxe. Notre but était de coder un site
+                vitrine pour imaginer le parcours utilisateur. Nous avons développé toute l'interface visuelle : de la connexion
+                fictive à l'affichage du catalogue et du panier. L'enjeu technique était de concevoir un design fluide, soigné et
+                responsive, afin de simuler une expérience d'achat réaliste.</p>
+            </div>
+            <div class="droite2">
+                <a href="https://gitlab.univ-nantes.fr/E258619H/sitre_vitrine" target="_blank" rel="noopener">
+                    <video autoplay loop muted playsinline aria-label="Démonstration du site vitrine Folex">
+                        <source src="assets/videos/site.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets-perso">
+        <h2>Mes projets personnels</h2>
+
+        <div class="projet_box">
+            <div class="gauche1">
+                <a href="https://gitlab.univ-nantes.fr/E258619H/jeu_gravite_simpliste" target="_blank" rel="noopener">
+                    <video autoplay loop muted playsinline aria-label="Démonstration du jeu avec gravité">
+                        <source src="assets/videos/jeu.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas les vidéos.
+                    </video>
+                </a>
+            </div>
+            <div class="droite1">
+                <h3>Jeu avec gravité <span class="year">2023</span></h3>
+                <p>Avant d'intégrer une formation en informatique, je m'intéressais déjà à la programmation : j'ai créé un jeu en 2D
+                avec une gravité simpliste et un personnage capable de sauter et de se déplacer. Cette expérience m'a aidé à
+                progresser dans la gestion des variables, des collisions et des classes, et à savoir m'adapter à différents
+                langages. Elle m'a permis d'être plus à l'aise lors des cours de programmation par la suite.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="CV">
+        <h2>Mon CV</h2>
+        <img src="assets/images/CV.png" alt="Aperçu du CV de Noé Kerloch">
+        <div id="CV_img">
+            <div id="CV_lien">
+                <a href="assets/images/CVButInformatique.pdf" download="CV_Noé_Kerloch.pdf">
+                    <figure>
+                        <img src="assets/images/cv.png" alt="Télécharger le CV">
+                    </figure>
+                </a>
+            </div>
+            <a href="assets/images/CVButInformatique.pdf" download="CV_Noé_Kerloch.pdf" class="btn btn-ghost">Télécharger</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Me contacter</h2>
+        <div id="contact_container">
+            <div id="contact_grid">
+                <div id="contact_direct">
+                    <h3>Contact direct</h3>
+                    <div id="contact_items">
+                        <a href="mailto:noekerloch@gmail.com" class="contact_item">
+                            <svg class="contact_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            <div class="contact_text">
+                                <div class="contact_label">Email</div>
+                                <div class="contact_value">noekerloch@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="tel:+33766562424" class="contact_item">
+                            <svg class="contact_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div class="contact_text">
+                                <div class="contact_label">Téléphone</div>
+                                <div class="contact_value">07 66 56 24 24</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="contact_socials">
+                    <h3>Réseaux sociaux</h3>
+                    <div id="social_links">
+                        <a href="https://www.linkedin.com/in/no%C3%A9-kerloch-2b47ba2a8" target="_blank" rel="noopener" class="social_link linkedin" title="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="https://gitlab.univ-nantes.fr/E258619H" target="_blank" rel="noopener" class="social_link gitlab" title="GitLab">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.6 9.7L13.1.2c-.4-.3-.9-.3-1.3 0L1.2 9.7c-.4.3-.6.7-.5 1.2l1.8 5.5c.1.4.4.7.8.9l9 5.2c.4.2.9.2 1.3 0l9-5.2c.4-.2.7-.5.8-.9l1.8-5.5c.1-.5-.1-.9-.5-1.2zm-4.2 6.7h-3.2l-1-3h-3.2l-1 3H4.6L12 3.2l7.4 13.2z"/>
+                            </svg>
+                            <span>GitLab</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<br><br><br><br><br>
+    <footer id="site-footer">
+        <p>Noé Kerloch — <span id="year"></span></p>
+    </footer>
 
-
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        // Ferme le menu mobile après un clic sur un lien
+        document.querySelectorAll('#menu a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
-
- 
