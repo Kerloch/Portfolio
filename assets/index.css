@@ -1,6 +1,3 @@
-/* =========================================================
-   TOKENS
-   ========================================================= */
 :root {
   --bg: #0b0c10;
   --surface: #14161d;
@@ -10,8 +7,8 @@
   --text: #e9e7de;
   --text-dim: #97a0ad;
 
-  --accent: #f5a742;      /* amber — actions, highlights */
-  --accent-2: #7dc4ff;    /* cool blue — links, secondary */
+  --accent: #f5a742;
+  --accent-2: #7dc4ff;
   --accent-soft: rgba(245, 167, 66, 0.12);
   --accent-2-soft: rgba(125, 196, 255, 0.12);
 
@@ -22,13 +19,20 @@
   --container: 1080px;
 }
 
-* {
-  margin: 0;
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -42,7 +46,7 @@ section {
   scroll-margin-top: 70px;
 }
 
-h2, h3, h1 {
+h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -50,7 +54,7 @@ h2, h3, h1 {
 
 h2 {
   font-size: 1.9rem;
-  margin: 0 0 2.5rem;
+  margin-bottom: 2.5rem;
   padding-bottom: 0.6rem;
   border-bottom: 2px solid var(--accent);
   display: inline-block;
@@ -73,8 +77,9 @@ a {
   color: var(--accent-2);
 }
 
-img {
+img, video {
   max-width: 100%;
+  display: block;
 }
 
 /* =========================================================
@@ -111,7 +116,7 @@ img {
   color: var(--text);
   font-family: var(--font-display);
   font-size: 0.9rem;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }
 
 #menu a:hover {
@@ -189,7 +194,7 @@ img {
   text-decoration: none;
   padding: 12px 22px;
   border-radius: var(--radius);
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   display: inline-block;
 }
 
@@ -293,7 +298,7 @@ img {
 }
 
 /* =========================================================
-   COMPETENCES
+   COMPÉTENCES
    ========================================================= */
 #comp {
   padding: 110px 24px;
@@ -308,12 +313,10 @@ img {
 }
 
 #comp h3 {
-  text-align: left;
   color: var(--text-dim);
   font-size: 1rem;
   font-weight: 500;
-  text-transform: none;
-  padding: 0 0 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -324,12 +327,11 @@ img {
 }
 
 #comp_img figure {
-  margin: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 20px 26px;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s ease, transform 0.2s ease;
   min-width: 110px;
 }
 
@@ -388,12 +390,10 @@ img {
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
-  display: block;
 }
 
 .droite1 h3, .gauche2 h3 {
-  text-align: left;
-  padding: 0 0 0.8rem;
+  padding-bottom: 0.8rem;
   font-size: 1.3rem;
   display: flex;
   align-items: baseline;
@@ -410,7 +410,6 @@ img {
 .droite1 p, .gauche2 p {
   color: var(--text-dim);
   font-size: 1rem;
-  padding: 0;
 }
 
 /* =========================================================
@@ -449,7 +448,7 @@ img {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 22px;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s ease;
 }
 
 #CV_lien a:hover {
@@ -494,8 +493,6 @@ img {
 
 #contact_direct h3, #contact_socials h3 {
   font-size: 1rem;
-  text-align: left;
-  padding: 0;
   color: var(--text-dim);
   font-weight: 500;
 }
@@ -516,7 +513,7 @@ img {
   border: 1px solid var(--border);
   text-decoration: none;
   color: var(--text);
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .contact_item:hover {
@@ -565,7 +562,7 @@ img {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .social_link:hover {
@@ -598,7 +595,6 @@ img {
 @media (max-width: 860px) {
   #hero {
     flex-direction: column;
-    text-align: left;
     padding-top: 110px;
   }
 
